@@ -34,7 +34,15 @@ public class AddOwnerPageTest extends TestBase
 		 return ob;
 		
 	}
-	@Test(priority=1,dataProvider="getTesdata")
+	
+	@Test(priority=1)
+	public void findButtonclick()
+	{
+		addownerpage.ClickFindownerBtn();
+		
+	}
+	
+	@Test(priority=2,dataProvider="getTesdata")
 	
 	public void ValidateCreateOwner(String FirstName,String LastName,String Address,String City,String Telephone)
 	{
