@@ -26,7 +26,7 @@ public static WebEventListener eventListener;
 public TestBase(){
 	try {
 		prop = new Properties();
-		FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/org/springframework/petclinic"
+		FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/org/springframework/samples/petclinic"
 				+ "/qa/config/config.properties");
 		prop.load(ip);
 	} catch (FileNotFoundException e) {
