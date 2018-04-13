@@ -37,15 +37,16 @@ public class AddOwnerPage extends TestBase
 			PageFactory.initElements(driver, this);
 		}
 		
-		public void ClickFindownerBtn()
+		/*public void ClickFindownerBtn()
 		{
 			FindOwnerBtn.click();
 			
-		}
+		}*/
 		
 		
 		public void CreatenewOwner(String Ftname,String Ltname,String Ads,String Cty,String Tel )
 		{
+			FindOwnerBtn.click();
 			AddOwnerBtn.click();
 			FirstName.sendKeys(Ftname);
 			LastName.sendKeys(Ltname);
@@ -55,14 +56,6 @@ public class AddOwnerPage extends TestBase
 			SaveBtn.click();
 		}
 		
-		
-
-
-
-
-
-
-
 }
 
 

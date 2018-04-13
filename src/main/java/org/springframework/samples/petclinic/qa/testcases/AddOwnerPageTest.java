@@ -35,12 +35,12 @@ public class AddOwnerPageTest extends TestBase
 		
 	}
 	
-	@Test(priority=1)
+	/*@Test(priority=1)
 	public void findButtonclick()
 	{
 		addownerpage.ClickFindownerBtn();
 		
-	}
+	}*/
 	
 	@Test(priority=2,dataProvider="getTesdata")
 	
@@ -52,7 +52,7 @@ public class AddOwnerPageTest extends TestBase
 	
 	@AfterMethod
 	public void tearDown(){
-		driver.quit();
+		driver.close();
 	}
 
 	
