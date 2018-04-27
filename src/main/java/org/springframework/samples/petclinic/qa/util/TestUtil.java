@@ -16,9 +16,9 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class TestUtil {
-public static final long PAGE_LOAD_TIMEOUT = 20;
+public static final long PAGE_LOAD_TIMEOUT = 30;
 
-public static long IMPLICIT_WAIT = 20;
+public static long IMPLICIT_WAIT = 30;
 	
 	public static String TESTDATA_SHEET_PATH = "D:\\SPRING_PET_CLINIC_MASTER\\spring-petclinic-master\\src\\test\\java\\com\\testdata\\OwnerData - Copy.xls";
 	static Workbook wb;

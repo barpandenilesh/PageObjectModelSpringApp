@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.springframework.samples.petclinic.qa.base.TestBase;
+import org.testng.Assert;
 
 public class AddOwnerPage extends TestBase
 {
@@ -55,10 +56,14 @@ public class AddOwnerPage extends TestBase
 			Telephone.sendKeys(Tel);
 			SaveBtn.click();
 		}
+public void verifytitle()
+	{
+	
+	String title= driver.getTitle();
+	System.out.println(title);
+	Assert.assertEquals("PetClinic :: a Spring Framework demonstration",title);
+
+	}
+		
 		
 }
-
-
-
-
-

@@ -1,5 +1,6 @@
 package org.springframework.samples.petclinic.qa.testcases;
 
+import org.apache.poi.util.SystemOutLogger;
 import org.springframework.samples.petclinic.qa.base.TestBase;
 import org.springframework.samples.petclinic.qa.pages.AddOwnerPage;
 import org.springframework.samples.petclinic.qa.util.TestUtil;
@@ -8,6 +9,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import ch.qos.logback.core.net.SyslogOutputStream;
 
 public class AddOwnerPageTest extends TestBase
 {
@@ -48,14 +51,22 @@ public class AddOwnerPageTest extends TestBase
 	{
 		
 		addownerpage.CreatenewOwner(FirstName, LastName, Address, City, Telephone);
+		//addownerpage.verifytitle();
 	}
+	
+	@Test (priority=3)
+	
+	public void validatetitle()
+	{
+		
+		 addownerpage.verifytitle();
+		//System.out.println(AddOwnerPage.driver.getTitle());
+	}
+	
 	
 	@AfterMethod
 	public void tearDown(){
 		driver.close();
 	}
 
-	
-	
-	
 }

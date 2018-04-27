@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]">
-  <test name="Test(failed)(failed)">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
       <class name="org.springframework.samples.petclinic.qa.testcases.AddOwnerPageTest">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- org.springframework.samples.petclinic.qa.testcases.AddOwnerPageTest -->
     </classes>
-  </test> <!-- Test(failed)(failed) -->
-</suite> <!-- Failed suite [Failed suite [Suite]] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
